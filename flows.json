@@ -1,0 +1,823 @@
+[
+    {
+        "id": "41a6e8a837db567c",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "414f04f0a0c14b26",
+        "type": "tab",
+        "label": "Transceiver's Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e313ad9f472b42fc",
+        "type": "tab",
+        "label": "Temperature Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d816f59743d3accb",
+        "type": "tab",
+        "label": "Humidity Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4fb8132f60d5fb62",
+        "type": "tab",
+        "label": "Settings",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "51ae5649fd0417c7",
+        "type": "tab",
+        "label": "Alarms",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fbfd16a898fd616f",
+        "type": "tab",
+        "label": "Help",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a27b62d5ccbfa606",
+        "type": "group",
+        "z": "41a6e8a837db567c",
+        "name": "Clock",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "73ed62de34222794",
+            "1881444073a52144",
+            "4bc84326bd293a83"
+        ],
+        "x": 74,
+        "y": 99,
+        "w": 772,
+        "h": 82
+    },
+    {
+        "id": "bbe0a0f71b565aec",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "PICadvanced style",
+                "default": "#4B7930",
+                "baseColor": "#c60c21",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#c60c21",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#c60c21",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#f0f0f0",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#c9c9c9",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#c60c21",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "PICadvanced",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ce29872396031d57",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "fa-bar-chart",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d4ff0e5431e7af6d",
+        "type": "ui_tab",
+        "name": "Transceiver's Data",
+        "icon": "fa-microchip",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ab540137e9d0bd94",
+        "type": "ui_spacer",
+        "z": "41a6e8a837db567c",
+        "name": "spacer",
+        "group": "973f3d29796b4091",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "34f7e74dc030b780",
+        "type": "ui_group",
+        "name": "Button",
+        "tab": "ce29872396031d57",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "50254376cecc49e4",
+        "type": "ui_group",
+        "name": "Dropdown",
+        "tab": "ce29872396031d57",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9d7837be591613fb",
+        "type": "ui_group",
+        "name": "Switch",
+        "tab": "ce29872396031d57",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f9c883a7502ae361",
+        "type": "ui_group",
+        "name": "Slider",
+        "tab": "ce29872396031d57",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f4eb98af6e2a5a51",
+        "type": "ui_group",
+        "name": "Numeric",
+        "tab": "ce29872396031d57",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "95075dd4a01c04a8",
+        "type": "ui_group",
+        "name": "Text input",
+        "tab": "ce29872396031d57",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "da1f88240cfcc5d4",
+        "type": "ui_group",
+        "name": "Colour picker",
+        "tab": "ce29872396031d57",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3bfaebae479a585d",
+        "type": "ui_group",
+        "name": "Form",
+        "tab": "ce29872396031d57",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "67daec6499ec80ac",
+        "type": "ui_group",
+        "name": "Date",
+        "tab": "ce29872396031d57",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d123d8e3279bae24",
+        "type": "ui_group",
+        "name": "Text",
+        "tab": "d4ff0e5431e7af6d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "155df3b9adf259e1",
+        "type": "ui_group",
+        "name": "Gauge",
+        "tab": "d4ff0e5431e7af6d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a2edcee4cc75472f",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "d4ff0e5431e7af6d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "abddafbc20096da0",
+        "type": "ui_tab",
+        "name": "Temperatura Data",
+        "icon": "fa-thermometer-empty",
+        "order": 3,
+        "disabled": true,
+        "hidden": false
+    },
+    {
+        "id": "54577fcea2fbe6be",
+        "type": "ui_tab",
+        "name": "Humidity Data",
+        "icon": "fa-tint",
+        "order": 4,
+        "disabled": true,
+        "hidden": false
+    },
+    {
+        "id": "a9660dc4c84a54c6",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "fa-cog",
+        "order": 5,
+        "disabled": true,
+        "hidden": false
+    },
+    {
+        "id": "5f09872af06e29d6",
+        "type": "ui_tab",
+        "name": "Alarms",
+        "icon": "fa-bell",
+        "order": 6,
+        "disabled": true,
+        "hidden": false
+    },
+    {
+        "id": "9b3f0c070da79688",
+        "type": "ui_tab",
+        "name": "Help",
+        "icon": "fa-info-circle",
+        "order": 8,
+        "disabled": true,
+        "hidden": false
+    },
+    {
+        "id": "3d65a224ec2191f6",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "abddafbc20096da0",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "479b47b690576a11",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "54577fcea2fbe6be",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "df990350d6beb1e8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "a9660dc4c84a54c6",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "43631f8d21ce0ddd",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "5f09872af06e29d6",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "7bf82732a3d57bd5",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "a23709eea7b02fb2",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "9b3f0c070da79688",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "dbc22c3c4a61c5f9",
+        "type": "ui_group",
+        "name": "Time & Data",
+        "tab": "ce29872396031d57",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9f5fe1bd7adb5352",
+        "type": "ui_template",
+        "z": "41a6e8a837db567c",
+        "group": "",
+        "name": "Dashboard Style",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    /* Styling for all the groups */\n    ui-card-panel {\n        box-shadow: rgba(0, 0, 0.35) 0px 5px 15 px;\n        border-radius: 5px;\n    }\n\n    /* Styling for all the elements in the group */\n    ui-card-panel * {\n        border-radius: 2.5px;\n    }\n\n    /* Styling of the group title */\n    .nr-dashboard-cardtitle {\n        font-weight: bold !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 164,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73ed62de34222794",
+        "type": "inject",
+        "z": "41a6e8a837db567c",
+        "g": "a27b62d5ccbfa606",
+        "name": "Atualizar Relógio",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "1881444073a52144"
+            ]
+        ]
+    },
+    {
+        "id": "1881444073a52144",
+        "type": "function",
+        "z": "41a6e8a837db567c",
+        "g": "a27b62d5ccbfa606",
+        "name": "Formatar Hora e Data",
+        "func": "let agora = new Date();\nlet horaFormatada = agora.toLocaleTimeString(); // Ex: '10:45:23'\nlet dataFormatada = agora.toLocaleDateString(); // Ex: '15/11/2024'\n\nmsg.payload = {\n    hora: horaFormatada,\n    data: dataFormatada\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "4bc84326bd293a83"
+            ]
+        ]
+    },
+    {
+        "id": "4bc84326bd293a83",
+        "type": "ui_text",
+        "z": "41a6e8a837db567c",
+        "g": "a27b62d5ccbfa606",
+        "group": "dbc22c3c4a61c5f9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Exibição do Relógio",
+        "label": "",
+        "format": "{{msg.payload.hora}} - {{msg.payload.data}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "18",
+        "color": "#000000",
+        "x": 720,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8175ec06792c5cda",
+        "type": "ui_numeric",
+        "z": "41a6e8a837db567c",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "f4eb98af6e2a5a51",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 180,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1374dcaa81d7a36a",
+        "type": "ui_text",
+        "z": "414f04f0a0c14b26",
+        "group": "d123d8e3279bae24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 170,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "72c69f5a2c34791a",
+        "type": "ui_gauge",
+        "z": "414f04f0a0c14b26",
+        "name": "",
+        "group": "155df3b9adf259e1",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 170,
+        "y": 153.33333333333334,
+        "wires": []
+    },
+    {
+        "id": "fc200f746d5e8899",
+        "type": "ui_chart",
+        "z": "414f04f0a0c14b26",
+        "name": "",
+        "group": "a2edcee4cc75472f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 170,
+        "y": 206.66666666666669,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b92bb8c45524d46",
+        "type": "ui_toast",
+        "z": "414f04f0a0c14b26",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 210,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e62e748411269463",
+        "type": "ui_chart",
+        "z": "e313ad9f472b42fc",
+        "name": "",
+        "group": "3d65a224ec2191f6",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d72f6f437aa6ee14",
+        "type": "ui_chart",
+        "z": "d816f59743d3accb",
+        "name": "",
+        "group": "479b47b690576a11",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 450,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b9d423de085c641",
+        "type": "ui_text",
+        "z": "4fb8132f60d5fb62",
+        "group": "df990350d6beb1e8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 350,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "153d689dc5c233c7",
+        "type": "ui_text",
+        "z": "51ae5649fd0417c7",
+        "group": "43631f8d21ce0ddd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 350,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c8defee1949ffd25",
+        "type": "ui_text",
+        "z": "fbfd16a898fd616f",
+        "group": "a23709eea7b02fb2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 230,
+        "y": 240,
+        "wires": []
+    }
+]
